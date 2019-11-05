@@ -1,6 +1,5 @@
 import regeneratorRuntime from "regenerator-runtime";
 
-
 const url = process.env.VUE_APP_API_URL;
 const apiKey = process.env.VUE_APP_API_KEY;
 
