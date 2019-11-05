@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Word Finder</h1>
     <SearchForm />
     <WordList />
   </div>

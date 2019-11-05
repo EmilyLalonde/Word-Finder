@@ -1,5 +1,8 @@
 <template>
-  
+  <div id="searchForm">
+    <input />
+    <button>Submit</button>
+</div>
 </template>
 
 <script>
