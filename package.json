@@ -6,10 +6,13 @@
     "start": "npm start",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "jest"
   },
   "dependencies": {
+    "@babel/core": "^7.7.0",
     "core-js": "^3.3.2",
+    "eslint-plugin-jest": "^23.0.2",
     "regenerator-runtime": "^0.13.3",
     "vue": "^2.6.10"
   },
@@ -20,7 +23,7 @@
     "@vue/cli-service": "^4.0.0",
     "@vue/server-test-utils": "^1.0.0-beta.29",
     "@vue/test-utils": "^1.0.0-beta.29",
-    "babel-core": "^6.26.3",
+    "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "eslint": "^5.16.0",

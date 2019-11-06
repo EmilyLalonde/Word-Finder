@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  id="app"
+>
+  <h1>
+    Word Finder
+  </h1>
+   
+  <div
+    id="searchForm"
+  >
+    <input
+      class=""
+      placeholder="Search ..."
+    />
+     
+    <button>
+      Submit
+    </button>
+     
+    <section>
+      Enter a word above to find its synonyms!
+    </section>
+     
+    <!---->
+  </div>
+   
+  <div
+    id="wordList"
+  >
+    <ul />
+  </div>
+</div>
+`;
