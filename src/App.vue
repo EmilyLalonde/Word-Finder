@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <h1>Word Finder</h1>
-    <SearchForm @find-words='findWords'/>
+    <SearchForm
+    :synonyms='this.synonyms' 
+    @find-words='findWords'/>
     <WordList 
     :synonyms='this.synonyms'
     :findWords='findWords'
