@@ -3,9 +3,9 @@
     <input
       placeholder="Search ..."
       v-model="word"
-      @keyup.enter.prevent="findWords(word)"
+      @keyup.enter.prevent="handleSubmit(word)"
     />
-    <button @click.prevent="findWords(word)">Submit</button>
+    <button @click.prevent="handleSubmit(word)">Submit</button>
   </div>
 </template>
 
@@ -18,6 +18,12 @@ export default {
   data() {
     return {
       word: ''
+    }
+  },
+  methods: {
+    handleSubmit(word) {
+      this.$emit('find-words', word)
+      this.word = ''
     }
   }
 }
