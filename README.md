@@ -16,8 +16,8 @@ This application was built using Vue.js and tested with Jest.
 
 
 To set up on your local machine, run the following commands in your termial:
-git clone https://github.com/EmilyLalonde/Word-Finder.git
-npm install
-npm run serve
+* git clone https://github.com/EmilyLalonde/Word-Finder.git
+* npm install
+* npm run serve
 
 Created by: Emily Lalonde
