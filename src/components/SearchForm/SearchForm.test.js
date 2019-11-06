@@ -3,7 +3,7 @@ import SearchForm from './SearchForm.vue';
 
 describe('SearchForm', () => {
 
-  test.skip('renders correctly', () => {
+  test('renders correctly', () => {
     const wrapper = mount(SearchForm);
     expect(wrapper.element).toMatchSnapshot();
   })

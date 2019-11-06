@@ -4,6 +4,7 @@
     <SearchForm
     :synonyms='this.synonyms' 
     @find-words='findWords'/>
+    <section v-if='!this.synonyms.length'>Enter a word above to find its synonyms!</section>
     <WordList 
     :synonyms='this.synonyms'
     :findWords='findWords'

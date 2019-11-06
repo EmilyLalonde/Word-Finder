@@ -20,12 +20,12 @@ exports[`App renders correctly 1`] = `
       Submit
     </button>
      
-    <section>
-      Enter a word above to find its synonyms!
-    </section>
-     
     <!---->
   </div>
+   
+  <section>
+    Enter a word above to find its synonyms!
+  </section>
    
   <div
     id="wordList"
