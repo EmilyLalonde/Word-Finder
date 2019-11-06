@@ -7,7 +7,6 @@
       :class="{ 'has-error': submitting && emptyInput }"
     />
     <button @click.prevent="handleSubmit(word)">Submit</button>
-    <section v-if='!this.synonyms.length'>Enter a word above to find its synonyms!</section>
     <p v-if="error && submitting" class="error-message">Please look up a word!</p>
   </div>
 </template>
