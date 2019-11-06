@@ -1,4 +1,12 @@
-# word-finder
+# Word Finder!
+
+#### Main Page:
+![image](https://user-images.githubusercontent.com/47184994/68326552-e671ee80-0088-11ea-8724-960a39d3b4cb.png)
+
+### Error Message:
+
+### Search Results:
+
 
 ## Project setup
 ```
