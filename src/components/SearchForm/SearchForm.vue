@@ -3,25 +3,60 @@
     <input
       placeholder="Search ..."
       v-model="word"
-      @keyup.enter.prevent="findWords(word)"
+      @keyup.enter.prevent="handleSubmit(word)"
+      :class="{ 'has-error': submitting && emptyInput }"
     />
-    <button @click.prevent="findWords(word)">Submit</button>
+    <button @click.prevent="handleSubmit(word)">Submit</button>
+    <section v-if='!this.synonyms.length'>Enter a word above to find its synonyms!</section>
+    <p v-if="error && submitting" class="error-message">Please look up a word!</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'form',
-  props: {
-    findWords: { type: Function }
-  },
+  name: "form",
+  props: ['synonyms', 'findWords'],
   data() {
     return {
-      word: ''
+      word: "",
+      submitting: false,
+      error: false
+    };
+  },
+  methods: {
+    handleSubmit(word) {
+      this.submitting = true;
+      this.clearStatus();
+
+      if (this.emptyInput) {
+        this.error = true;
+        return;
+      }
+
+      this.$emit("find-words", word);
+      this.word = "";
+
+      this.error = false;
+      this.submitting = false;
+    },
+    clearStatus() {
+      this.error = false;
+    }
+  },
+  computed: {
+    emptyInput() {
+      return this.word === "";
     }
   }
-}
+};
 </script>
 
 <style scoped>
+[class*="-message"] {
+  font-weight: 500;
+}
+
+.error-message {
+  color: #d33c40;
+}
 </style>
