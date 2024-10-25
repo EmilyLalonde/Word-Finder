@@ -14,7 +14,7 @@
     "core-js": "^3.3.2",
     "eslint-plugin-jest": "^23.0.2",
     "regenerator-runtime": "^0.13.3",
-    "vue": "^2.6.10"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.6.3",
